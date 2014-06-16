@@ -7,7 +7,7 @@ var scrabbleScore = function (word) {
 	var valueSix = /[jxJX]/;
 	var valueTen = /[qzQZ]/;
 	var wordValue = 0;
-	
+
 			for (var index = 0; index < word.length; index++) {
 				if (valueOne.test(word.charAt(index))) {
 						wordValue += 1;
