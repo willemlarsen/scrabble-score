@@ -17,4 +17,7 @@ describe('scrabbleScore', function () {
 	it('calculates the scrabble score for a word containing some amount of letters of value six(6)), (j, x)', function() {
 		scrabbleScore('jx').should.equal(12);
 	});
+	it('calculates the scrabble score for a word ocntaining some amount of letters of value ten(10), (q, z)', function() {
+		scrabbleScore('qz').should.equal(20);
+	});
 });

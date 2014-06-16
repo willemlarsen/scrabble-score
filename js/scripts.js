@@ -5,6 +5,7 @@ var scrabbleScore = function (word) {
 	var valueFour = /[fhvwyFHVWY]/;
 	var valueFive = /[kK]/;
 	var valueSix = /[jxJX]/;
+	var valueTen = /[qzQZ]/;
 	var wordValue = 0;
 		for (var index = 0; index < word.length; index++) {
 			if (valueOne.test(word.charAt(index))) {
@@ -20,6 +21,8 @@ var scrabbleScore = function (word) {
 				wordValue += 5;
 			} else if (valueSix.test(word.charAt(index))) {
 				wordValue += 6;
+			} else if (valueTen.test(word.charAt(index))) {
+				wordValue += 10;
 			}
 		} return wordValue;
 };
