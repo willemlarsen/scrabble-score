@@ -11,4 +11,7 @@ describe('scrabbleScore', function () {
 	it('calculates the scrabble score for a word containing some amount of letters of value four(4), (f, h, v, w, y)', function() {
 		scrabbleScore('fhvwy').should.equal(20);
 	});
+	it('calculates the scrabble score for a word containing some amount of letters of value five(5), (k)', function() {
+		scrabbleScore('k').should.equal(5);
+	});
 });
