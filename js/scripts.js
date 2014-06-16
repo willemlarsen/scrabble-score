@@ -20,9 +20,12 @@ var scrabbleScore = function (word) {
 	
 	var wordValue = 0;
 
-	for (var index = 0; index < word.length; index++) {
-		if (valueOne['letters'].test(word.charAt(0))) {
-			wordValue = wordValue + valueOne['score'];
-		}
+	var scoreArray = [valueOne, valueTwo];
+	for (var element = 0; element < scoreArray.length; element++) {
+		for (var index = 0; index < word.length; index++) {
+			if (scoreArray[element].letters.test(word.charAt(0))) {
+				wordValue = wordValue + scoreArray[element].score;
+			}
+		} 
 	} return wordValue;
 };
