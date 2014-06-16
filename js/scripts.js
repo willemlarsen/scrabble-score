@@ -29,3 +29,19 @@ var scrabbleScore = function (word) {
 		} 
 	} return wordValue;
 };
+
+$(document).ready(function() {
+	$('form#scrabble-score').submit(function(event) {
+		var inputWord = $('input#word').val();
+		var calculation = scrabbleScore(inputWord);
+		
+
+		$('#input-word').text(inputWord);
+		$('#calculation').text(calculation);
+		$('.result').show();
+
+		event.preventDefault();
+	});
+});
+
+

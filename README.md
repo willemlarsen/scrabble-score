@@ -2,7 +2,7 @@
 
 Hello! I'm Willem Larsen and this little bit of code calculates the scrabble score of a given word. Thanks for your interest.
 
-I'm refactoring the first version of the javascript to use objects.
+I've refactored the first version of the javascript to use objects.
 
 The MIT License (MIT)
 
