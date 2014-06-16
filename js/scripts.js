@@ -20,7 +20,7 @@ var scrabbleScore = function (word) {
 	
 	var wordValue = 0;
 
-	var scoreArray = [valueOne, valueTwo];
+	var scoreArray = [valueOne, valueTwo, valueThree, valueFour, valueFive, valueSix, valueTen];
 	for (var element = 0; element < scoreArray.length; element++) {
 		for (var index = 0; index < word.length; index++) {
 			if (scoreArray[element].letters.test(word.charAt(0))) {
