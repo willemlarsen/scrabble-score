@@ -3,6 +3,6 @@ describe('scrabbleScore', function () {
 		scrabbleScore('aeioulnrst').should.equal(10);
 	});
 	it('calculates the scrabble score for a word containing some amount of letters of value two(2) (d, g)', function () {
-		scrabbleScore('dog').should.equal(4);
+		scrabbleScore('dg').should.equal(4);
 	});
 });
