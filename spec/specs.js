@@ -5,4 +5,7 @@ describe('scrabbleScore', function () {
 	it('calculates the scrabble score for a word containing some amount of letters of value two(2) (d, g)', function () {
 		scrabbleScore('dg').should.equal(4);
 	});
+	it('calculates the scrabble score for a word containing some amount of letters of value three(3), (b, c, m, p)', function () {
+		scrabbleScore('bcmp').should.equal(12);
+	});
 });
